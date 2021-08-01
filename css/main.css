@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,300&family=Zen+Tokyo+Zoo&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #fafafa;
+  font-family: Trebuchet MS, Helvetica;
+}
+/* -----Шапка сайта----- */
+/* Фон шапки и свойства*/
+header {
+  width: 100%;
+  padding: 10px 0.5% 0px 0.5%;
+  background: transparent;
+  float: left;
+  position: fixed;
+}
+/* Свойства лога*/
+header #logo {
+  color: #fff;
+  cursor: pointer;
+}
+
+header #logo span {
+  font-size: 1em;
+  line-height: 45px;
+  margin-left: 2px;
+  font-family: 'Zen Tokyo Zoo', serif;
+  color: #ff8138;
+}
+header #logo p {
+  font-size: 2em;
+  line-height: 45px;
+  margin-left: 40px;
+  font-family: 'Zen Tokyo Zoo', serif;
+}
+/* Свойства вкладок */
+@media (min-width: 701px) {
+  #logo {
+    float: left;
+    width: 30%;
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 700px) {
+  #logo {
+    margin-top: 15px;
+    float: left;
+    width: 100%;
+    font-size: 1.5em;
+  }
+}
+
+#about {
+  text-align: right;
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+
+/* Настройка элементов шапки */
+#about > a {
+  color: #fff;
+  font-family: 'Roboto', serif;
+}
+
+#about > a:hover {
+  color: #b9b9b9;
+}
+
+#about > a {
+  margin-right: 40px;
+}
+
+#about span {
+  color: #ff8138;
+}
+
+@media (min-width: 1001px) {
+  #about {
+    float: right;
+    width: 70%
+  }
+
+  #about > a {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 711px) {
+  #about {
+    float: right;
+    width: 70%
+  }
+
+  #about > a {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 710px) and (min-width:375) {
+  #about {
+    float: left;
+    width: 100%
+  }
+
+  #about > a {
+    font-size: 15px;
+  }
+}
+@media (max-width: 374px) {
+  #about {
+    float: left;
+    width: 100%
+  }
+
+  #about > a {
+    font-size: 12px;
+  }
+}
+
+.fixed {
+  z-index: 5000;
+  background-color: #000000de;
+  border-bottom: 1px solid #c0c0c04a;
+}
+
+/* -----Главный блок----- */
+#top {
+  width: 100%;
+  height: 500px;
+  background-image: url(https://www.teahub.io/photos/full/140-1401665_3d-printing-machines-hd.png);
+  background-blend-mode: multiply;
+  background-color: #2e3a44;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: #fff;
+}
+
+@media (min-width: 1001px) {
+  #top{
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 551px) {
+  #top{
+    font-size: 1.5em;
+    padding-top: 20%;
+  }
+}
+
+@media (max-width: 550px) {
+  #top{
+    font-size: 1.3em;
+    padding-top: 50%;
+  }
+}
+
+#top h1 {
+  padding-top: 10%;
+}
+
+#top h3 {
+  color: #ccc;
+}
+#top span {color: #ff8138}
+
+
+/*Блок возможностей*/
+
+#main {
+  float: left;
+  background-color: #403f3f;
+  border-top: 2px solid silver;
+  color: #e8e8e8;
+  font-size: 1.3em;
+}
+
+@media (min-width: 1401px) {
+  #main {
+    padding: 100px 20%;
+    width: 60%;
+  }
+}
+
+@media (max-width: 1400px) {
+  #main {
+    padding: 100px 10%;
+    width: 80%;
+  }
+}
+
+@media (max-width: 700px) {
+  #main div {
+    width: 98%!important;
+    margin-bottom: 20px;
+  }
+}
+
+#main div {
+  width: 48%;
+  margin-right: 2%;
+  float: left;
+}
+
+#main h2 {font-size: 3em}
+#main span {color: #ff8138}
+
+
+#work {
+  float: left;
+  background-image: url(https://3dcrafter.ru/media/3d-crafter-slide-1.jpg);
+
+  background-blend-mode: multiply;
+  background-color: #403f40;
+  background-size: cover;
+  background-attachment: fixed;
+
+  padding: 100px 0;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+
+#work h2 {font-size: 4em}
+
+@media (min-width: 561px) {
+  #work h2 {font-size: 4em}
+}
+
+@media (max-width: 560px) {
+  #work h2 {font-size: 2em}
+}
+
+#work .img {
+  float: left;
+  width: 30%;
+  margin-right: 5%;
+  margin-top: 50px;
+}
+
+#work .img:nth-child(even) {
+  margin-left: 18%;
+}
+
+#work img {
+  background: #fafafa;
+  padding: 1px;
+  border: 2px solid silver;
+  float: left;
+  width: 100%;
+  max-width: 500px;
+}
+
+#work a {
+  float: left;
+  width: 100%;
+  font-size: 2em;
+  margin-top: 10px;
+}
+
+@media (max-width: 700px) {
+  #work .img {
+    width: 80%!important;
+    margin-right: 0!important;
+    margin-left: 10%!important;
+  }
+}
+#work span {color: #ff8138}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MakePrint</title>
+</head>
+<body>
+  <header>
+    <div id="logo" onclick="slowScroll('#top')">
+      <p><span>M</span>ake<span>P</span>rint</span><p>
+    </div>
+    <div id="about">
+      <a href="#" onclick="slowScroll('#main')" title="Возможности" ><span>В</span>озможности</a>
+      <a href="#" onclick="slowScroll('#work')" title="Наши работы" ><span>Н</span>аши работы</a>
+      <a href="#" onclick="slowScroll('#order')" title="Заказать" ><span>З</span>аказать</a>
+      <a href="#" onclick="slowScroll('#faq')" title="FAQ" ><span>F</span>AQ</a>
+    </div>
+  </header>
+
+<div id="top">
+  <h1><span>П</span>ечать деталей</h1>
+  <h3><span>П</span>одчинить вещь? <span>С</span>оздать что-то новое? <span>Л</span>егко!!! </h3>
+</div>
+
+<div id="main">
+  <div class="intro">
+    <h2><span>Н</span>аши услуги помогут вам!!!</h2>
+  </div>
+  <div class="text">
+       <a><span>Р</span>ано или поздно любая вещь может сломаться. И возникает ситуация, что сломанная пластиковая деталь продается только дорогим комплектом для ремонта или вовсе её невозможно найти.<br><br>
+          <span>А</span> может вы создаёте что-то совершенно новое и вам необходим прототип. Или уже есть свой проект и вам необходимо большое количество пластиковых деталей, но заказывать форму для литья и налаживать производство нерентабильно.<br><br>
+          <span>С</span>о всем этим справится технология 3<span>Д</span> печати!!!<br><br>
+          <span>А</span> наша команда спроектирует для вас деталь или подготовит уже вашу готовую для печати и с помощью высокоточного оборудования выполнит печать используя тот материал, который лучше всего подходит для реализации вашего заказа.</a>
+  </div>
+</div>
+
+<div id="work">
+  <h2><span>Н</span>аши работы</h2>
+  <div class="img">
+    <img src="img/1.jpg" alt="">
+    <a><span>К</span>рышка зеркала <span>S</span>sang<span>Y</span>ong</a>
+  </div>
+  <div class="img">
+    <img src="img/2.jpg" alt="">
+    <a><span>П</span>рямозубая и косозубая шестерни на стеклоподъемник</a>
+  </div>
+  <div class="img">
+    <img src="img/3.jpg" alt="">
+    <a><span>К</span>нопка плафона <span>VW P</span>assat b7</a>
+  </div>
+  <div class="img">
+    <img src="img/4.jpg" alt="">
+    <a><span>К</span>репление "чашечки" наушников</a>
+  </div>
+</div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    function slowScroll(id){
+      $('html, body').animate({
+        scrollTop: $(id).offset().top
+      }, 500);
+    }
+
+    $(document).on("scroll", function() {
+      if($(window).scrollTop() === 0)
+        $("header").removeClass("fixed");
+      else {
+        $("header").attr("class", "fixed");
+      }
+    })
+  </script>
+
+</body>
+</html>
